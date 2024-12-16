@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgb(241, 241, 241);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+}
+
+.scroll-horizontal {
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    gap: 10px;
+}
+
+.scroll-horizontal ::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-horizontal {
+    /*tirar a barra de scroll*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.scroll-horizontal {
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bck-button {
+    left: 5px;
+}
+
+.nxt-button {
+    right: -20px;
+}
+
+.scroll-horizontal .card {
+    flex-shrink: 0;
+    width: 18rem;
+}
+
+.card {
+    margin-right: 10px;
+}
+
+.card img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do card */
+    height: 200px; /* Defina a altura desejada para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+
+.scroll-horizontal .carousel-inner img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.form-novidades {
+    display: flex;
+    margin-top: 50px;
+}
+
+.novidades-sinal {
+    background-color: #19467E;
+    padding: 50px;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.novidades-sinal h1 {
+    color: white;
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 20px;
+    /* Adiciona um espaçamento abaixo do título */
+}
+
+.formSinal input {
+    display: block;
+    /* Faz com que os inputs fiquem em linha reta */
+    width: 50%;
+    /* Garante que os inputs ocupem toda a largura disponível */
+    margin-bottom: 10px;
+    /* Espaçamento entre os inputs */
+}
+
+.checkbox-container {
+    display: flex;
+    /* Usado para colocar o checkbox e o <p> na mesma linha */
+    align-items: center;
+    /* Alinha verticalmente o checkbox e o texto */
+    margin-bottom: 10px;
+    /* Espaçamento entre o checkbox e o próximo item */
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    /* Adiciona um espaçamento entre o checkbox e o texto */
+}
+
+
+footer p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19467E;
+    color: white;
+
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .carrouselCarros {
+        height: 400px;
+        /* Ajusta a altura do carrossel em telas menores */
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        /* Mantém o ajuste das imagens para cobrir o espaço */
+    }
+}
+
+
+.container h2 {
+    padding-left: 50px;
+}
+
+.infoCarro {
+    margin: 50px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.infoCarro h3 {
+    font-size: 24px;
+    /* Tamanho maior para o título do carro */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Espaço entre o título e os tópicos */
+    color: #333;
+    /* Cor do título */
+}
+
+/* Contêiner que vai organizar os tópicos */
+.infoCarro .infoRow {
+    display: flex;
+    justify-content: space-between;
+    /* Garante que o conteúdo ocupe o máximo de espaço possível */
+    align-items: flex-start;
+    /* Alinha os itens no topo */
+    margin-bottom: 20px;
+}
+
+.infoCarro .infoColumn {
+    text-align: center;
+    /* Centraliza os itens dentro de cada coluna */
+}
+
+.infoCarro h4 {
+    font-size: 16px;
+    /* Tamanho menor para os tópicos */
+    font-weight: lighter;
+    /* Tópicos com fonte mais fina */
+    color: #666;
+    /* Cor cinza para os tópicos */
+    margin-bottom: 5px;
+    /* Espaço entre o tópico e a característica */
+}
+
+.infoCarro h5 strong {
+    margin-top: 50px;
+    color: rgb(59, 59, 197);
+}
+
+.infoCarro hr {
+    margin-top: 50px;
+}
+
+.infoCarro p {
+    margin-top: 60px;
+}
+
+.infoCarro strong {
+    font-size: 18px;
+    /* Tamanho maior para as características */
+    font-weight: bold;
+    /* Características em negrito */
+    color: #333;
+    /* Cor mais forte para as características */
+}
+
+
+/* Estilo para o container */
+.fOEtJn {
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo para o label */
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Estilo para o select */
+select {
+    width: 100%;
+    /* Faz o select ocupar toda a largura */
+    padding: 12px 15px;
+    /* Padding para dar mais espaço */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
+    background-color: #fff;
+    /* Fundo branco */
+    border-radius: 0px;
+    /* Sem bordas arredondadas */
+    border: 1px solid #ccc;
+    /* Borda suave */
+    appearance: none;
+    /* Remove a seta padrão */
+    -webkit-appearance: none;
+    /* Para navegadores baseados em Webkit */
+    -moz-appearance: none;
+    /* Para navegadores baseados em Gecko */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Suaviza a transição de foco */
+}
+
+/* Estilo para a seta personalizada */
+.fOEtJn::after {
+    content: '▼';
+    /* Adiciona a seta */
+    position: absolute;
+    right: 15px;
+    /* Posiciona a seta à direita */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Não interfere com os cliques */
+    font-size: 14px;
+    color: #333;
+    /* Cor da seta */
+}
+
+
+select:focus {
+    border-color: #007bff;
+    /* Altera a cor da borda quando em foco */
+    outline: none;
+    /* Remove o contorno */
+}
+
+
+option:disabled {
+    color: #aaa;
+}
+
+.form-AdicionarCarro {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+}
+
+.form-AdicionarCarro input {
+    margin-bottom: 15px;
+}
+
+.form-AdicionarCarro input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-AdicionarCarro input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-AdicionarCarro input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Pagina principal*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+#section-pesquisa-carros {
+    background-color: white;
+}
+
+#pesquisa-carros {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    align-items: start;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#pesquisa-carros select {
+    width: 100%;
+    height: 50px;
+    color: grey;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+#pesquisa-carros option {
+    background-color: lightgray;
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+}
+
+#pesquisa {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    color: grey;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #19467E;
+    color: white;
+    padding: 10px;
+}
+
+.carrouselCarros2 {
+    height: 400px; 
+    overflow: hidden; 
+    margin-bottom: 30px;
+}
+
+.carrouselCarros2 img {
+    height: 100%; /* Faz com que as imagens se ajustem à altura do carrossel */
+    object-fit: cover; /* Mantém o preenchimento visual proporcional */
+}
+
+
